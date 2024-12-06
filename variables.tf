@@ -45,11 +45,6 @@ variable "subnet_id" {
   type        = string
 }
 
-variable "vnet_id" {
-  description = "Resource ID of virtual network where subnet delegated for DevOps pool will be located"
-  type        = string
-}
-
 variable "enable_telemetry" {
   description = "Boolean flag that determines whether telemetry should be enabled"
   type        = bool

@@ -1,12 +1,6 @@
-data "azurerm_client_config" "this" {}
-
 data "azuredevops_client_config" "this" {}
 
 data "azurerm_subscription" "current" {}
-
-data "azurerm_resource_group" "this" {
-  name = var.resource_group
-}
 
 data "azuredevops_project" "this" {
   name = var.ado_project_name
