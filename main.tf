@@ -11,7 +11,7 @@ resource "azurerm_dev_center_project" "this" {
   resource_group_name = var.resource_group
 }
 
-resource "azurerm_role_assignment" "net-contrib" {
+resource "azurerm_role_assignment" "net_contrib" {
   scope                = data.azurerm_subscription.current.id
   role_definition_name = "Network Contributor"
   principal_id         = var.aad_sp_devopsinfrastructure_id
@@ -48,6 +48,6 @@ module "managed_devops_pool" {
   }
   maximum_concurrency = var.devops_pool_max_concurrency
   enable_telemetry    = var.enable_telemetry
-  depends_on          = [azurerm_role_assignment.reader, azurerm_role_assignment.net-contrib]
+  depends_on          = [azurerm_role_assignment.reader, azurerm_role_assignment.net_contrib]
 }
 
