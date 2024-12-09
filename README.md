@@ -51,7 +51,7 @@ Terraform module for creation of Azure Managed DevOps pool.
 | <a name="input_ado_project_name"></a> [ado\_project\_name](#input\_ado\_project\_name) | Target Azure DevOps Project name where VMSS agent pool would be provisioned | `string` | n/a | yes |
 | <a name="input_dev_center_name"></a> [dev\_center\_name](#input\_dev\_center\_name) | Name of DevCenter in which managed DevOps pool will be created | `string` | n/a | yes |
 | <a name="input_dev_center_project_name"></a> [dev\_center\_project\_name](#input\_dev\_center\_project\_name) | Name of DevCenter project where managed DevOps pool will be created | `string` | n/a | yes |
-| <a name="input_devops_pool_max_concurrency"></a> [devops\_pool\_max\_concurrency](#input\_devops\_pool\_max\_concurrency) | Maximum number of nodes in DevOps pool's VMSS | `number` | `3` | no |
+| <a name="input_devops_pool_max_concurrency"></a> [devops\_pool\_max\_concurrency](#input\_devops\_pool\_max\_concurrency) | Maximum number of nodes in DevOps pool's VMSS | `number` | `2` | no |
 | <a name="input_devops_pool_name"></a> [devops\_pool\_name](#input\_devops\_pool\_name) | Name of managed DevOps pool | `string` | n/a | yes |
 | <a name="input_enable_telemetry"></a> [enable\_telemetry](#input\_enable\_telemetry) | Boolean flag that determines whether telemetry should be enabled | `bool` | `false` | no |
 | <a name="input_location"></a> [location](#input\_location) | The Azure Region in which all resources in this example should be created. | `string` | n/a | yes |
