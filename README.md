@@ -1,5 +1,5 @@
-# Azure <> Terraform module
-Terraform module for creation Azure <>
+# Azure Managed DevOps Pool Terraform module
+Terraform module for creation of Azure Managed DevOps pool.
 
 ## Usage
 
