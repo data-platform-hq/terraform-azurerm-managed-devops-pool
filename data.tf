@@ -9,5 +9,6 @@ data "azuredevops_project" "this" {
 data "azuredevops_agent_queue" "this" {
   project_id = data.azuredevops_project.this.project_id
   name       = module.managed_devops_pool.name
+
   depends_on = [module.managed_devops_pool]
 }

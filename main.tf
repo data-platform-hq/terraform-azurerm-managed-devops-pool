@@ -27,11 +27,13 @@ resource "azuredevops_pipeline_authorization" "this" {
   project_id  = data.azuredevops_project.this.project_id
   resource_id = data.azuredevops_agent_queue.this.id
   type        = "queue"
-  depends_on  = [module.managed_devops_pool]
+
+  depends_on = [module.managed_devops_pool]
 }
 
 module "managed_devops_pool" {
-  source                         = "Azure/avm-res-devopsinfrastructure-pool/azurerm"
+  source = "Azure/avm-res-devopsinfrastructure-pool/azurerm"
+
   resource_group_name            = var.resource_group
   location                       = var.location
   name                           = var.devops_pool_name
@@ -48,6 +50,6 @@ module "managed_devops_pool" {
   }
   maximum_concurrency = var.devops_pool_max_concurrency
   enable_telemetry    = var.enable_telemetry
-  depends_on          = [azurerm_role_assignment.reader, azurerm_role_assignment.net_contrib]
-}
 
+  depends_on = [azurerm_role_assignment.reader, azurerm_role_assignment.net_contrib]
+}
