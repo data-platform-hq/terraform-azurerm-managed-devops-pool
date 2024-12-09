@@ -37,7 +37,7 @@ variable "devops_pool_name" {
 variable "devops_pool_max_concurrency" {
   description = "Maximum number of nodes in DevOps pool's VMSS"
   type        = number
-  default     = 3
+  default     = 2
 }
 
 variable "subnet_id" {
