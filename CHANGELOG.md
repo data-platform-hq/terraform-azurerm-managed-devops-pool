@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/data-platform-hq/terraform-azurerm-managed-devops-pool/compare/v1.0.0...v1.0.1) (2025-06-19)
+
+
+### Bug Fixes
+
+* azapi version bump ([bae0625](https://github.com/data-platform-hq/terraform-azurerm-managed-devops-pool/commit/bae062570ca57a87807636a5d04e2eb2e15ad04a))
+
 # 1.0.0 (2024-12-11)
 
 
